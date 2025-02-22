@@ -2,7 +2,7 @@ import { Link } from '@/router';
 
 export const Header = () => {
   return (
-    <header className='bg-green-600 w-full p-10 flex justify-between'>
+    <header className='bg-primary w-full p-10 flex justify-between'>
       <Link to='/' className='text-white font-bold text-3xl'>
         掲示板
       </Link>

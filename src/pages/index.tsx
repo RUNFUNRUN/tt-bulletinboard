@@ -1,5 +1,6 @@
 import { apiBaseUrl, threadsSchema } from '@/api-config';
 import { Card, CardContent } from '@/components/ui/card';
+import { Link } from '@/router';
 import { useQuery } from '@tanstack/react-query';
 
 const Home = () => {
@@ -17,9 +18,16 @@ const Home = () => {
       <div className='space-y-2'>
         {threads?.data?.map((thread) => {
           return (
-            <Card key={thread.id}>
-              <CardContent className='text-xl'>{thread.title}</CardContent>
-            </Card>
+            <Link
+              to='/threads/:id'
+              params={{ id: thread.id }}
+              key={thread.id}
+              className='block'
+            >
+              <Card>
+                <CardContent className='text-xl'>{thread.title}</CardContent>
+              </Card>
+            </Link>
           );
         })}
       </div>
