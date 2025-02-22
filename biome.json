@@ -4,7 +4,7 @@
     "enabled": true
   },
   "files": {
-    "ignore": ["node_modules", "dist", "tsconfig*"]
+    "ignore": ["node_modules", "dist", "tsconfig*", "src/router.ts"]
   },
   "formatter": {
     "enabled": true,
