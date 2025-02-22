@@ -14,8 +14,10 @@
     "check:fix": "biome check --write --unsafe ."
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.0.8",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.8"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
