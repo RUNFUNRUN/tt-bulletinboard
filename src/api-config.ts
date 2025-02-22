@@ -10,3 +10,7 @@ export const threadSchema = z.object({
 });
 
 export const threadsSchema = z.array(threadSchema);
+
+export const newThreadSchema = z.object({
+  title: z.string().min(1, 'スレッドのタイトルを入力してください。'),
+});
