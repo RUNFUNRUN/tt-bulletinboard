@@ -58,7 +58,7 @@ const Home = () => {
   return (
     <>
       <h1 className='text-2xl font-bold py-4'>コメント一覧</h1>
-      <div className='flex gap-20 w-full'>
+      <div className='flex gap-20'>
         <div className='w-full space-y-2'>
           {thread?.data?.posts.map((post) => {
             return (
