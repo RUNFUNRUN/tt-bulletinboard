@@ -1,8 +1,6 @@
 import { z } from 'zod';
 
-export const apiBaseUrl = new URL(
-  'https://railway.bulletinboard.techtrain.dev',
-);
+export const apiBaseUrl = new URL(import.meta.env.VITE_API_BASE_URL);
 
 export const threadSchema = z.object({
   id: z.string(),
